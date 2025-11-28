@@ -1,6 +1,7 @@
 name: Build and Publish NuGet
 
 on:
+  workflow_dispatch:  # Allow manual trigger
   push:
     branches: [ master ]
     tags:
