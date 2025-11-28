@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!-- NuGet Package Metadata -->
+    <PackageId>PersistKeysToDb</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>Hamed Ashrafi, HYMMA</Authors>
+    <Company>HYMMA</Company>
+    <Product>Key Storage with Dapper</Product>
+    <Title>Data protection with Dapper</Title>
+    <Description>Manage ASP.NET Core Data Protection keys with Dapper. Store your encryption keys in SQL Server database instead of file system.</Description>
+    <Copyright>MIT</Copyright>
+    <PackageTags>Dapper;DataProtection;ASP.NET Core;SQL Server;Key Storage;Encryption</PackageTags>
+    <PackageReleaseNotes>Initial public release on NuGet.org</PackageReleaseNotes>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageIcon>nugetIcon.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/HYMMA/PersistKeysToDb</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/HYMMA/PersistKeysToDb</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <!-- Package settings -->
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="nugetIcon.png" Pack="true" PackagePath="" />
+    <None Include="Readme.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection" Version="8.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="8.0.17" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.3" />
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+  </ItemGroup>
+
+</Project>

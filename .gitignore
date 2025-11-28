@@ -1,0 +1,22 @@
+## .NET
+bin/
+obj/
+*.user
+*.userosscache
+*.suo
+*.cache
+*.log
+
+## NuGet
+*.nupkg
+*.snupkg
+
+## Visual Studio
+.vs/
+*.csproj.user
+
+## JetBrains Rider
+.idea/
+
+## macOS
+.DS_Store
